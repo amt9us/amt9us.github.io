@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Test on amt9us.github.io</title>
+    <link>https://amt9us.github.io/categories/test/</link>
+    <description>Recent content in Test on amt9us.github.io</description>
+    <image>
+      <title>amt9us.github.io</title>
+      <url>https://amt9us.github.io/images/default-og.jpg</url>
+      <link>https://amt9us.github.io/images/default-og.jpg</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://amt9us.github.io/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Highlight Test</title>
+      <link>https://amt9us.github.io/posts/code-highlight-test/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>https://amt9us.github.io/posts/code-highlight-test/</guid>
+      <description>코드 하이라이팅 스타일 테스트용 포스트</description>
+    </item>
+  </channel>
+</rss>

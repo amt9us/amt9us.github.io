@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on amt9us.github.io</title>
+    <link>https://amt9us.github.io/categories/</link>
+    <description>Recent content in Categories on amt9us.github.io</description>
+    <image>
+      <title>amt9us.github.io</title>
+      <url>https://amt9us.github.io/images/default-og.jpg</url>
+      <link>https://amt9us.github.io/images/default-og.jpg</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Nov 2025 23:06:07 +0900</lastBuildDate>
+    <atom:link href="https://amt9us.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontend</title>
+      <link>https://amt9us.github.io/categories/frontend/</link>
+      <pubDate>Thu, 13 Nov 2025 23:06:07 +0900</pubDate>
+      <guid>https://amt9us.github.io/categories/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>개발</title>
+      <link>https://amt9us.github.io/categories/%EA%B0%9C%EB%B0%9C/</link>
+      <pubDate>Wed, 15 Jan 2025 10:00:00 +0900</pubDate>
+      <guid>https://amt9us.github.io/categories/%EA%B0%9C%EB%B0%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>https://amt9us.github.io/categories/test/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>https://amt9us.github.io/categories/test/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
