@@ -1,55 +1,66 @@
-/* assets/css/extended/custom.css */
-
-/* PC 화면 (1350px 이상)에서만 적용 */
+/* PC 화면 (1350px 이상) 개선된 TOC */
 @media screen and (min-width: 1350px) {
     .toc {
         position: fixed !important;
         top: 150px;
-        left: calc(50% + 400px);
-        width: 250px;
-        
+        left: calc(50% + 420px);
+        width: 280px;
         background: none !important;
         border: none !important;
-        box-shadow: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
     }
 
-    /* 토글 버튼(Summary) 스타일링 */
+    /* 목차 제목(Table of Contents) 스타일 */
     .toc details summary {
-        display: list-item;
         cursor: pointer;
-        font-weight: bold;
-        font-size: 1.1rem;
+        font-weight: 600;
+        font-size: 0.95rem;
         color: var(--primary);
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         outline: none;
+        /* list-style: none; 를 삭제하여 기본 화살표를 유지합니다 */
     }
 
-    /* 화살표(▶) 색상 */
+    /* 화살표(▶) 색상 및 크기 조정 */
     .toc details summary::marker {
         color: var(--secondary);
+        font-size: 0.8rem;
     }
 
-    /* ▼▼▼ 여기를 수정했습니다 (들여쓰기) ▼▼▼ */
+    /* 가이드 라인 및 내부 들여쓰기 최적화 */
     .toc .inner {
-        margin-left: 24px;   /* 제목 화살표만큼 오른쪽으로 밀기 */
-        padding-left: 15px;  /* 세로줄과 텍스트 사이 간격 */
-        border-left: 1px solid var(--entry); /* 왼쪽에 얇은 가이드 라인 */
+        margin-left: 7px;   /* 화살표 위치와 정렬 맞춤 */
+        padding-left: 15px;
+        border-left: 1px solid var(--tertiary); /* 얇고 깔끔한 라인 */
     }
 
-    /* 링크 스타일 */
+    .toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* 링크 가독성 및 호버 효과 */
     .toc a {
         color: var(--secondary);
         text-decoration: none;
         display: block;
-        padding: 4px 0;
-        font-size: 14px;
-        transition: all 0.2s;
+        padding: 6px 0;
+        font-size: 13.5px;
+        line-height: 1.4;
+        transition: all 0.2s ease;
     }
 
     .toc a:hover {
         color: var(--primary);
-        transform: translateX(3px);
+        transform: translateX(4px); /* 살짝 밀리는 효과 */
+    }
+
+    /* STEP 1, STEP 2 등 하위 항목 들여쓰기 */
+    .toc ul ul {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid var(--entry); /* 하위 항목용 더 연한 라인 */
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }

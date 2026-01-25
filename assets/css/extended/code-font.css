@@ -3,8 +3,6 @@
     font-family: 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 0.9em;
     letter-spacing: 0.02em;
-    /* 폰트 로딩 전에도 가독성 유지 */
-    font-display: swap;
 }
 
 .post-content pre code,
@@ -30,6 +28,8 @@
 .post-content .chroma .cp,
 .post-content .chroma .cpf {
     font-family: 'Noto Sans KR', 'Inconsolata', sans-serif;
+    font-size: 0.85em !important;
+    opacity: 0.8;
 }
 
 /* ============================================
@@ -131,15 +131,15 @@
 :root[data-theme="dark"] .post-content pre.chroma,
 :root[data-theme="dark"] .post-content .highlight pre.chroma,
 :root[data-theme="dark"] .post-content .highlight:not(table) {
-    background-color: #282a36 !important;
+    background-color: #0d1117 !important;
 }
 
 /* 코드 블록 텍스트 색상 */
 :root[data-theme="dark"] .post-content pre code,
 :root[data-theme="dark"] .post-content .highlight pre code,
 :root[data-theme="dark"] .post-content .chroma code {
-    color: #f8f8f2 !important;
-    background-color: #282a36 !important;
+    color: #c9d1d9 !important;
+    background-color: #0d1117 !important;
 }
 
 /* 다크 모드 - 모든 키워드 */
@@ -149,7 +149,7 @@
 :root[data-theme="dark"] .post-content .chroma .kt,
 :root[data-theme="dark"] .post-content .chroma .kd,
 :root[data-theme="dark"] .post-content .chroma .kn {
-    color: #ff79c6 !important;
+    color: #ff7b72 !important;
 }
 
 /* 다크 모드 - 모든 문자열 */
@@ -159,14 +159,14 @@
 :root[data-theme="dark"] .post-content .chroma .sb,
 :root[data-theme="dark"] .post-content .chroma .sc,
 :root[data-theme="dark"] .post-content .chroma .sd {
-    color: #f1fa8c !important;
+    color: #a5d6ff !important;
 }
 
 /* 다크 모드 - 함수 */
 :root[data-theme="dark"] .post-content .chroma .nf,
 :root[data-theme="dark"] .post-content .chroma .na,
 :root[data-theme="dark"] .post-content .chroma .fm {
-    color: #50fa7b !important;
+    color: #d2a8ff !important;
 }
 
 /* 다크 모드 - 숫자 */
@@ -175,7 +175,7 @@
 :root[data-theme="dark"] .post-content .chroma .mf,
 :root[data-theme="dark"] .post-content .chroma .mb,
 :root[data-theme="dark"] .post-content .chroma .mh {
-    color: #bd93f9 !important;
+    color: #79c0ff !important;
 }
 
 /* 다크 모드 - 주석 */
@@ -183,31 +183,31 @@
 :root[data-theme="dark"] .post-content .chroma .c1,
 :root[data-theme="dark"] .post-content .chroma .cm,
 :root[data-theme="dark"] .post-content .chroma .cp {
-    color: #6272a4 !important;
+    color: #8b949e !important;
     font-style: italic;
 }
 
 /* 다크 모드 - 줄 번호 */
 :root[data-theme="dark"] .post-content .chroma .lnt,
 :root[data-theme="dark"] .post-content .chroma .ln {
-    color: #6272a4 !important;
+    color: #484f58 !important;
 }
 
 /* 다크 모드 - 변수/이름 */
 :root[data-theme="dark"] .post-content .chroma .nv,
 :root[data-theme="dark"] .post-content .chroma .n,
 :root[data-theme="dark"] .post-content .chroma .nb {
-    color: #bd93f9 !important;
+    color: #ffa657 !important;
 }
 
 /* 다크 모드 - 클래스 */
 :root[data-theme="dark"] .post-content .chroma .nc {
-    color: #8be9fd !important;
+    color: #ffa657 !important;
 }
 
 /* 다크 모드 - 연산자 */
 :root[data-theme="dark"] .post-content .chroma .o {
-    color: #ff79c6 !important;
+    color: #ff7b72 !important;
 }
 
 /* 모바일 코드 블록 개선 */
@@ -215,11 +215,11 @@
     .post-content pre {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        font-size: 0.85em; /* 모바일에서 약간 작게 */
+        font-size: 0.85em;
     }
     
     .post-content code {
         font-size: 0.85em;
-        word-break: break-all; /* 긴 코드도 줄바꿈 */
+        word-break: break-all;
     }
 }
