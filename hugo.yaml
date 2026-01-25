@@ -1,12 +1,149 @@
-baseURL: https://amt9us.github.io/
-languageCode: ko-kr
-title: shipkr's log
+baseURL: "https://amt9us.github.io/"
+languageCode: en-us
+title: amt9us.github.io
+pagerSize: 6
 theme: PaperMod
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
-  env: production
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: amt9us.github.io
+  description: "실무에서 경험한 백엔드 개발 노하우와 개인 프로젝트, 학습 내용을 공유하는 개발 블로그"
+  keywords: [Backend, Devlog, Blog]
+  author: amt9us
+  images: ["/images/default-og.jpg"] 
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  ShowToc: true
+  TocOpen: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true  # true → false로 변경 (캐싱 최적화)
+    favicon: "/images/favicon.png"  # images 폴더의 favicon.png 사용
+    favicon16x16: "<link / abs url>"  # 사용 안 하면 그대로 두거나 삭제
+    favicon32x32: "<link / abs url>"  # 사용 안 하면 그대로 두거나 삭제
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "amt9us.github.io"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
   profileMode:
-    enabled: true
-    title: "amt9us"
-    subtitle: "Shipping results, not just code."
-    imageUrl: "https://github.com/amt9us.png"
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/amt9us"
+    - name: email
+      url: "mailto:tmdgus877@gmail.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/seunghyun-kim-250b562a6/"
+    - name: rss
+      url: "/index.xml"  # RSS 피드
+
+  analytics:
+    google:
+      SiteVerificationTag: "Hl4cfmGPiEz-hCmqtj9nY5OKY_gMQFbny-JWV-K6WuQ"  # "XYZabc" → 실제 태그로 변경
+    bing:
+      SiteVerificationTag: "XYZabc"  # Bing 사용 시 실제 태그로 변경, 아니면 그대로 두기
+    yandex:
+      SiteVerificationTag: "XYZabc"  # Yandex 사용 시 실제 태그로 변경, 아니면 그대로 두기
+
+  cover:
+    hidden: true           # 기본적으로 숨김
+    hiddenInList: true     # 목록에서 숨김 (미니멀)
+    hiddenInSingle: false   # 포스트 페이지에서만 표시 (선택)
+
+  editPost:
+    URL: "https://github.com/amt9us/amt9us.github.io/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "summary", "content"]
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 5  # 가장 자주 사용 → 가장 앞에
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20  # Categories보다 자주 사용 → 앞에
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    anchorLineNos: false
+    style: github  # 기본 스타일 (CSS로 오버라이드됨)

@@ -1,0 +1,68 @@
+<script>
+    // 1. 현재 PaperMod 테마 설정을 읽어 Giscus 테마('light' 또는 'dark')를 반환하는 함수
+    function getGiscusTheme() {
+        const theme = localStorage.getItem("pref-theme");
+        
+        if (theme === "dark") {
+            return "dark";
+        } else if (theme === "light") {
+            return "light";
+        } else {
+            // 'auto' 모드일 경우 시스템 설정 확인
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        }
+    }
+
+    // 2. 페이지 로드 시 초기 테마 설정
+    // script 태그를 동적으로 생성하여 초기 로딩부터 맞는 테마를 적용합니다.
+    let giscusTheme = getGiscusTheme();
+    
+    let giscusScript = document.createElement("script");
+    giscusScript.src = "https://giscus.app/client.js";
+    giscusScript.setAttribute("data-repo", "amt9us/amt9us.github.io");
+    giscusScript.setAttribute("data-repo-id", "R_kgDOQU8FrQ");
+    giscusScript.setAttribute("data-category", "Announcements");
+    giscusScript.setAttribute("data-category-id", "DIC_kwDOQfHqsM4CzLXr");
+    giscusScript.setAttribute("data-mapping", "pathname");
+    giscusScript.setAttribute("data-strict", "0");
+    giscusScript.setAttribute("data-reactions-enabled", "1");
+    giscusScript.setAttribute("data-emit-metadata", "0");
+    giscusScript.setAttribute("data-input-position", "bottom");
+    giscusScript.setAttribute("data-lang", "ko");
+    giscusScript.setAttribute("crossorigin", "anonymous");
+    giscusScript.setAttribute("async", "");
+    
+    // 동적으로 가져온 테마 적용
+    giscusScript.setAttribute("data-theme", giscusTheme);
+
+    // 스크립트를 문서에 추가
+    document.currentScript.parentNode.insertBefore(giscusScript, document.currentScript.nextSibling);
+
+    // 3. 테마 전환 버튼 클릭 시 Giscus 테마 업데이트 함수
+    function setGiscusTheme() {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+
+        // 약간의 딜레이를 주어 PaperMod가 로컬스토리지를 업데이트한 후 값을 읽도록 함
+        setTimeout(() => {
+            const newTheme = getGiscusTheme();
+            
+            iframe.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {
+                        theme: newTheme
+                    }
+                }
+            }, 'https://giscus.app');
+        }, 100); // 0.1초 딜레이
+    }
+
+    // 4. 이벤트 리스너 등록
+    const themeToggle = document.querySelector('#theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', setGiscusTheme);
+    }
+    
+    // 시스템 테마 변경 감지 (OS 테마 변경 시 대응)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setGiscusTheme);
+</script>

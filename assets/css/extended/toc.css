@@ -1,0 +1,55 @@
+/* assets/css/extended/custom.css */
+
+/* PC 화면 (1350px 이상)에서만 적용 */
+@media screen and (min-width: 1350px) {
+    .toc {
+        position: fixed !important;
+        top: 150px;
+        left: calc(50% + 400px);
+        width: 250px;
+        
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* 토글 버튼(Summary) 스타일링 */
+    .toc details summary {
+        display: list-item;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: var(--primary);
+        margin-bottom: 10px;
+        outline: none;
+    }
+
+    /* 화살표(▶) 색상 */
+    .toc details summary::marker {
+        color: var(--secondary);
+    }
+
+    /* ▼▼▼ 여기를 수정했습니다 (들여쓰기) ▼▼▼ */
+    .toc .inner {
+        margin-left: 24px;   /* 제목 화살표만큼 오른쪽으로 밀기 */
+        padding-left: 15px;  /* 세로줄과 텍스트 사이 간격 */
+        border-left: 1px solid var(--entry); /* 왼쪽에 얇은 가이드 라인 */
+    }
+
+    /* 링크 스타일 */
+    .toc a {
+        color: var(--secondary);
+        text-decoration: none;
+        display: block;
+        padding: 4px 0;
+        font-size: 14px;
+        transition: all 0.2s;
+    }
+
+    .toc a:hover {
+        color: var(--primary);
+        transform: translateX(3px);
+    }
+}

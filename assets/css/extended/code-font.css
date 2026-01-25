@@ -1,0 +1,225 @@
+/* 코드 폰트 - Inconsolata */
+.post-content code {
+    font-family: 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    letter-spacing: 0.02em;
+    /* 폰트 로딩 전에도 가독성 유지 */
+    font-display: swap;
+}
+
+.post-content pre code,
+.post-content .highlight pre code,
+.post-content .chroma code,
+.post-content .highlight code {
+    font-family: 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+}
+
+.post-content .chroma .lnt,
+.post-content .chroma .ln {
+    font-family: 'Inconsolata', monospace;
+}
+
+.post-content .chroma .c,
+.post-content .chroma .c1,
+.post-content .chroma .cm,
+.post-content .chroma .ch,
+.post-content .chroma .cs,
+.post-content .chroma .cp,
+.post-content .chroma .cpf {
+    font-family: 'Noto Sans KR', 'Inconsolata', sans-serif;
+}
+
+/* ============================================
+   라이트 모드 - GitHub 스타일
+   ============================================ */
+
+/* 배경색 - 모든 가능한 선택자 */
+:root[data-theme="light"] .post-content .chroma,
+:root[data-theme="light"] .post-content .highlight .chroma,
+:root[data-theme="light"] .post-content pre.chroma,
+:root[data-theme="light"] .post-content .highlight pre.chroma,
+:root[data-theme="light"] .post-content .highlight:not(table) {
+    background-color: #f6f8fa !important;
+}
+
+/* 코드 블록 텍스트 색상 */
+:root[data-theme="light"] .post-content pre code,
+:root[data-theme="light"] .post-content .highlight pre code,
+:root[data-theme="light"] .post-content .chroma code {
+    color: #24292e !important;
+    background-color: #f6f8fa !important;
+}
+
+/* 라이트 모드 - 모든 키워드 */
+:root[data-theme="light"] .post-content .chroma .k,
+:root[data-theme="light"] .post-content .chroma .kr,
+:root[data-theme="light"] .post-content .chroma .kp,
+:root[data-theme="light"] .post-content .chroma .kt,
+:root[data-theme="light"] .post-content .chroma .kd,
+:root[data-theme="light"] .post-content .chroma .kn {
+    color: #d73a49 !important;
+}
+
+/* 라이트 모드 - 모든 문자열 */
+:root[data-theme="light"] .post-content .chroma .s,
+:root[data-theme="light"] .post-content .chroma .s1,
+:root[data-theme="light"] .post-content .chroma .s2,
+:root[data-theme="light"] .post-content .chroma .sb,
+:root[data-theme="light"] .post-content .chroma .sc,
+:root[data-theme="light"] .post-content .chroma .sd {
+    color: #032f62 !important;
+}
+
+/* 라이트 모드 - 함수 */
+:root[data-theme="light"] .post-content .chroma .nf,
+:root[data-theme="light"] .post-content .chroma .na,
+:root[data-theme="light"] .post-content .chroma .fm {
+    color: #6f42c1 !important;
+}
+
+/* 라이트 모드 - 숫자 */
+:root[data-theme="light"] .post-content .chroma .m,
+:root[data-theme="light"] .post-content .chroma .mi,
+:root[data-theme="light"] .post-content .chroma .mf,
+:root[data-theme="light"] .post-content .chroma .mb,
+:root[data-theme="light"] .post-content .chroma .mh {
+    color: #005cc5 !important;
+}
+
+/* 라이트 모드 - 주석 */
+:root[data-theme="light"] .post-content .chroma .c,
+:root[data-theme="light"] .post-content .chroma .c1,
+:root[data-theme="light"] .post-content .chroma .cm,
+:root[data-theme="light"] .post-content .chroma .cp {
+    color: #6a737d !important;
+    font-style: italic;
+}
+
+/* 라이트 모드 - 줄 번호 */
+:root[data-theme="light"] .post-content .chroma .lnt,
+:root[data-theme="light"] .post-content .chroma .ln {
+    color: #8e959f !important;
+}
+
+/* 라이트 모드 - 변수/이름 */
+:root[data-theme="light"] .post-content .chroma .nv,
+:root[data-theme="light"] .post-content .chroma .n,
+:root[data-theme="light"] .post-content .chroma .nb {
+    color: #e36209 !important;
+}
+
+/* 라이트 모드 - 클래스 */
+:root[data-theme="light"] .post-content .chroma .nc {
+    color: #6f42c1 !important;
+}
+
+/* 라이트 모드 - 연산자 */
+:root[data-theme="light"] .post-content .chroma .o {
+    color: #d73a49 !important;
+}
+
+/* ============================================
+   다크 모드 - Dracula 스타일
+   ============================================ */
+
+/* 배경색 - 모든 가능한 선택자 */
+:root[data-theme="dark"] .post-content .chroma,
+:root[data-theme="dark"] .post-content .highlight .chroma,
+:root[data-theme="dark"] .post-content pre.chroma,
+:root[data-theme="dark"] .post-content .highlight pre.chroma,
+:root[data-theme="dark"] .post-content .highlight:not(table) {
+    background-color: #282a36 !important;
+}
+
+/* 코드 블록 텍스트 색상 */
+:root[data-theme="dark"] .post-content pre code,
+:root[data-theme="dark"] .post-content .highlight pre code,
+:root[data-theme="dark"] .post-content .chroma code {
+    color: #f8f8f2 !important;
+    background-color: #282a36 !important;
+}
+
+/* 다크 모드 - 모든 키워드 */
+:root[data-theme="dark"] .post-content .chroma .k,
+:root[data-theme="dark"] .post-content .chroma .kr,
+:root[data-theme="dark"] .post-content .chroma .kp,
+:root[data-theme="dark"] .post-content .chroma .kt,
+:root[data-theme="dark"] .post-content .chroma .kd,
+:root[data-theme="dark"] .post-content .chroma .kn {
+    color: #ff79c6 !important;
+}
+
+/* 다크 모드 - 모든 문자열 */
+:root[data-theme="dark"] .post-content .chroma .s,
+:root[data-theme="dark"] .post-content .chroma .s1,
+:root[data-theme="dark"] .post-content .chroma .s2,
+:root[data-theme="dark"] .post-content .chroma .sb,
+:root[data-theme="dark"] .post-content .chroma .sc,
+:root[data-theme="dark"] .post-content .chroma .sd {
+    color: #f1fa8c !important;
+}
+
+/* 다크 모드 - 함수 */
+:root[data-theme="dark"] .post-content .chroma .nf,
+:root[data-theme="dark"] .post-content .chroma .na,
+:root[data-theme="dark"] .post-content .chroma .fm {
+    color: #50fa7b !important;
+}
+
+/* 다크 모드 - 숫자 */
+:root[data-theme="dark"] .post-content .chroma .m,
+:root[data-theme="dark"] .post-content .chroma .mi,
+:root[data-theme="dark"] .post-content .chroma .mf,
+:root[data-theme="dark"] .post-content .chroma .mb,
+:root[data-theme="dark"] .post-content .chroma .mh {
+    color: #bd93f9 !important;
+}
+
+/* 다크 모드 - 주석 */
+:root[data-theme="dark"] .post-content .chroma .c,
+:root[data-theme="dark"] .post-content .chroma .c1,
+:root[data-theme="dark"] .post-content .chroma .cm,
+:root[data-theme="dark"] .post-content .chroma .cp {
+    color: #6272a4 !important;
+    font-style: italic;
+}
+
+/* 다크 모드 - 줄 번호 */
+:root[data-theme="dark"] .post-content .chroma .lnt,
+:root[data-theme="dark"] .post-content .chroma .ln {
+    color: #6272a4 !important;
+}
+
+/* 다크 모드 - 변수/이름 */
+:root[data-theme="dark"] .post-content .chroma .nv,
+:root[data-theme="dark"] .post-content .chroma .n,
+:root[data-theme="dark"] .post-content .chroma .nb {
+    color: #bd93f9 !important;
+}
+
+/* 다크 모드 - 클래스 */
+:root[data-theme="dark"] .post-content .chroma .nc {
+    color: #8be9fd !important;
+}
+
+/* 다크 모드 - 연산자 */
+:root[data-theme="dark"] .post-content .chroma .o {
+    color: #ff79c6 !important;
+}
+
+/* 모바일 코드 블록 개선 */
+@media screen and (max-width: 768px) {
+    .post-content pre {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.85em; /* 모바일에서 약간 작게 */
+    }
+    
+    .post-content code {
+        font-size: 0.85em;
+        word-break: break-all; /* 긴 코드도 줄바꿈 */
+    }
+}

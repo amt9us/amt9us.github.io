@@ -1,0 +1,114 @@
+/* ============================================
+   모바일 반응형 스타일 (768px 이하)
+   ============================================ */
+
+/* 모바일 (768px 이하) */
+@media screen and (max-width: 768px) {
+    /* 링크 터치 영역 확대 (리스트, 테이블 내부 링크 제외) */
+    .post-content p a,
+    .post-content h1 a,
+    .post-content h2 a,
+    .post-content h3 a,
+    .post-content h4 a,
+    .post-content h5 a,
+    .post-content h6 a,
+    .post-content blockquote a {
+        padding: 2px 0;
+        min-height: 44px;
+        display: inline-block;
+    }
+    
+    /* 리스트 내부 링크는 원래대로 (간격 유지) */
+    .post-content ul li a,
+    .post-content ol li a {
+        padding: 0 !important;
+        min-height: auto !important;
+        display: inline !important;
+    }
+    
+    /* 테이블 내부 링크는 원래대로 (간격 유지) */
+    .post-content table a,
+    .post-content table th a,
+    .post-content table td a {
+        padding: 0 !important;
+        min-height: auto !important;
+        display: inline !important;
+    }
+    
+    /* 리스트 아이템 간격 더 줄이기 */
+    .post-content ul li,
+    .post-content ol li {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    /* 포스트 카드 호버 효과 제거 (모바일에서는 불필요) */
+    .post-entry:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    /* 코드 블록 가로 스크롤 개선 */
+    .post-content pre {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.85em;
+    }
+    
+    /* 인라인 코드 */
+    .post-content code {
+        font-size: 0.85em;
+        word-break: break-all;
+    }
+    
+    /* 본문 폰트 크기 조정 */
+    .post-content {
+        font-size: 16px;
+    }
+    
+    /* 테이블 라인 간격 줄이기 */
+    .post-content table th,
+    .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td,
+    .post-content table td {
+        padding: 3px 2px !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+    }
+    
+    /* 테이블 행 간격 최소화 */
+    .post-content table {
+        border-collapse: collapse !important;
+        border-spacing: 0 !important;
+    }
+}
+
+/* 매우 작은 화면 (340px 이하) */
+@media screen and (max-width: 340px) {
+    .post-content {
+        font-size: 15px;
+    }
+    
+    /* 작은 화면에서 여백 조정 */
+    .post-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .post-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* 리스트 간격 더 줄이기 */
+    .post-content ul li,
+    .post-content ol li {
+        margin-top: 0.15em;
+        margin-bottom: 0.15em;
+    }
+    
+    /* 테이블 간격 더 줄이기 */
+    .post-content table th,
+    .post-content table td {
+        padding: 1px 2px !important;
+        line-height: 1.0 !important;
+        font-size: 0.85em !important;
+    }
+}
