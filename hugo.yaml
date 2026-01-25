@@ -1,0 +1,12 @@
+baseURL: https://amt9us.github.io/
+languageCode: ko-kr
+title: shipkr's log
+theme: PaperMod
+
+params:
+  env: production
+  profileMode:
+    enabled: true
+    title: "amt9us"
+    subtitle: "Shipping results, not just code."
+    imageUrl: "https://github.com/amt9us.png"
