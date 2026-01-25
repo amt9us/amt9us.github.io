@@ -4,7 +4,7 @@ date: 2026-01-25T22:06:00+09:00
 description: "올해도 시작된 N번째 블로그 도전기"
 categories: ["Log"]
 tags: ["Hugo", "GitHub", "PaperMod", "Blog", "Config"]
-draft: true
+draft: false
 ---
 
 ## 1. 블로그를 시작한 이유
