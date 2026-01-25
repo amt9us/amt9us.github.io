@@ -22,7 +22,7 @@ outputs:
 params:
   env: production
   title: amt9us.github.io
-  description: "실무에서 경험한 백엔드 개발 노하우와 개인 프로젝트, 학습 내용을 공유하는 개발 블로그"
+  description: "실무 경험과 개인적인 학습 기록을 정리하는 공간입니다."
   keywords: [Backend, Devlog, Blog]
   author: amt9us
   images: ["/images/default-og.jpg"] 
@@ -48,12 +48,12 @@ params:
 
   assets:
     # disableHLJS: true # to disable highlight.js
-    disableFingerprinting: true  # true → false로 변경 (캐싱 최적화)
-    favicon: "/images/favicon.png"  # images 폴더의 favicon.png 사용
-    favicon16x16: "<link / abs url>"  # 사용 안 하면 그대로 두거나 삭제
-    favicon32x32: "<link / abs url>"  # 사용 안 하면 그대로 두거나 삭제
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    disableFingerprinting: false
+    favicon: "/images/favicon.png"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "amt9us.github.io"
@@ -91,10 +91,12 @@ params:
   analytics:
     google:
       SiteVerificationTag: "Hl4cfmGPiEz-hCmqtj9nY5OKY_gMQFbny-JWV-K6WuQ"
+    naver:
+      SiteVerificationTag: "4cc52ffd2fbd2aef8e874d07dc49a2d19310dce2"
     bing:
-      SiteVerificationTag: "XYZabc"  # Bing 사용 시 실제 태그로 변경, 아니면 그대로 두기
+      SiteVerificationTag: "XYZabc"
     yandex:
-      SiteVerificationTag: "XYZabc"  # Yandex 사용 시 실제 태그로 변경, 아니면 그대로 두기
+      SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true
@@ -135,6 +137,7 @@ menu:
       name: Categories
       url: /categories/
       weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
