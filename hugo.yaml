@@ -49,11 +49,12 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: false
-    favicon: "/images/favicon.png"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-96x96.png"
+    favicon32x32: "/favicon/favicon-96x96.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/favicon.svg"
+    manifest: "/favicon/site.webmanifest"
 
   label:
     text: "amt9us.github.io"
