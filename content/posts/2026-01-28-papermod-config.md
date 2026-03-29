@@ -2,7 +2,7 @@
 title: PaperMod 테마 상세 설정하기
 date: 2026-01-28T17:14:20+09:00
 description: "Hugo PaperMod 테마의 hugo.yaml 상세 설정 정리"
-categories: ["Log"]
+categories: ["DevLog"]
 tags: ["Hugo", "PaperMod", "Config"]
 draft: false
 ---

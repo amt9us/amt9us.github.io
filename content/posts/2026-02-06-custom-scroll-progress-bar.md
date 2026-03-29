@@ -2,7 +2,7 @@
 title: "블로그 스크롤 진행 바(Progress Bar) 만들기"
 date: 2026-02-06T21:49:42+09:00
 description: "스크롤 진행 바(Scroll Progress Bar) 구현 경험을 정리합니다."
-categories: ["Log"]
+categories: ["DevLog"]
 tags: ["JavaScript", "Hugo", "Web", "UX"]
 draft: false
 ---

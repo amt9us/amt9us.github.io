@@ -2,7 +2,7 @@
 title: "GitHub Pages와 Hugo로 기술 블로그 구축하고 배포하기"
 date: 2026-01-25T22:06:00+09:00
 description: "올해도 시작된 N번째 블로그 도전기"
-categories: ["Log"]
+categories: ["DevLog"]
 tags: ["Hugo", "GitHub", "PaperMod", "Blog", "Config"]
 draft: false
 ---

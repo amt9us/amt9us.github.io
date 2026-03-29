@@ -2,8 +2,8 @@
 title: "Oracle에서 스키마 분리 + 공통 테이블 활용 구조 이해"
 date: 2026-03-25T20:13:39+09:00
 description: "Oracle 환경에서 스키마 분리와 공통 테이블 Synonym 활용 구조를 분석하고, 장점과 개선 포인트를 정리한 글입니다."
-categories: ["Work"]
-tags: ["Schema", "Synonym", "Oracle", "Database", "Architecture"]
+categories: ["Database"]
+tags: ["Oracle", "Schema", "Synonym"]
 draft: false
 ---
 

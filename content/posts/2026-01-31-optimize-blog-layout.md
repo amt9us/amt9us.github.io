@@ -2,7 +2,7 @@
 title: "모바일 반응형 및 본문 가독성 개선"
 date: 2026-01-31T11:55:11+09:00
 description: "모바일 반응형 설정 및 가독성 증가 설정한 경험을 정리합니다."
-categories: ["Log"]
+categories: ["DevLog"]
 tags: ["Blog", "PaperMod", "Config", "Responsive", "Hugo", "UI/UX"]
 draft: false
 ---

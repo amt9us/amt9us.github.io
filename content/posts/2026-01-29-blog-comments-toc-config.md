@@ -2,7 +2,7 @@
 title: "Giscus 댓글 연동 및 사이드바 ToC 적용"
 date: 2026-01-29T21:19:57+09:00
 description: "PaperMod 테마의 기본 ToC 커스텀하고, Giscus 댓글 시스템을 연동하는 방법을 정리합니다."
-categories: ["Log"]
+categories: ["DevLog"]
 tags: ["Hugo", "PaperMod", "Giscus", "CSS"]
 draft: false
 ---
